@@ -5,8 +5,12 @@ var db = require('./redis');
 
 
 var user  ={
-    name:'admin'
-}
+    account:'admin',
+    pass:"admin",
+    birthDay:new Date("")
+};
+
+
 
 var userDao =function(){};
 module.exports = new userDao();

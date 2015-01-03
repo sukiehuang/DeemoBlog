@@ -1,5 +1,5 @@
 /**
- * 模块依赖
+ * 系统模块依赖
  * @type {exports}
  */
 var express = require('express');
@@ -10,6 +10,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
 
+
+var router = require('./config/router');
+var db = require('./config/redis');
 
 var app = express();
 var server = http.createServer(app);
