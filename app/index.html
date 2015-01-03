@@ -31,7 +31,23 @@
             <ul class="nav navbar-nav">
               <li><a href="/">Blog</a></li>
               <li><a href="/">Tags</a></li>
-              <li><a href="/">Views</a></li>
+              <li class="dropdown">
+                <a href="#"  class="dropdown-toggle" data-toggle="dropdown">Views<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="/detail?id=1">详细页1</a>
+                  </li>
+                  <li>
+                    <a href="/detail?id=2">详细页2</a>
+                  </li>
+                  <li>
+                    <a href="/detail?id=3">详细页3</a>
+                  </li>
+                  <li>
+                    <a href="/detail?id=4">详细页3</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li>
@@ -65,15 +81,15 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="/">Home</a></li>
-          <li><a ng-href="/about">About</a></li>
-          <li><a ng-href="/">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">deemoBlog</h3>
-      </div>
-
+      <!--  <div class="header">
+         <ul class="nav nav-pills pull-right">
+           <li class="active"><a ng-href="/">Home</a></li>
+           <li><a ng-href="/about">About</a></li>
+           <li><a ng-href="/">Contact</a></li>
+         </ul>
+         <h3 class="text-muted">deemoBlog</h3>
+       </div>-->
+      <!--内容视图部分-->
       <div ng-view=""></div>
 
       <div class="footer">
